@@ -2,9 +2,9 @@ $(document).ready(function(){
 	$(window).scroll(function(){
 		
 		// Change this to target a different percentage
-		var targetPercentage = 80;
-		//Change this to set the height of your nav bar so it hides properly
-		var navBarHeight = 50;
+		var targetPercentage = 70;
+		//Change this to set the height of your nav bar so it hides properly. IF you have a box shadow you may have to adjust this number to be height + shadow distance
+		var navBarHeight = 66;
 		//Window Math
 		var scrollTo = $(window).scrollTop(),
         docHeight = $(document).height(),
