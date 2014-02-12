@@ -10,15 +10,18 @@ $(document).ready(function(){
         docHeight = $(document).height(),
         windowHeight = $(window).height();
        	scrollPercent = (scrollTo / (docHeight-windowHeight)) * 100;
-					console.log(scrollPercent);
+		scrollPercent = scrollPercent.toFixed(1);
+			
+			$('#percentageCounter h1').text(scrollPercent+"%");
 
-							if(scrollPercent > targetPercentage) {
-								$("#navigation").css({ top: '0' });
-							}
-						
-							if(scrollPercent < targetPercentage) {
-								$("#navigation").css({ top: '-'+navBarHeight+'px' });
-							}
+			if(scrollPercent > targetPercentage) {
+				$("#navigation").css({ top: '0' });
+			}
+		
+			if(scrollPercent < targetPercentage) {
+				$("#navigation").css({ top: '-'+navBarHeight+'px' });
+			}
+			
 						
 	}).trigger('scroll');
 });

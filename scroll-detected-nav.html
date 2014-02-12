@@ -7,7 +7,7 @@
 <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.14.1/build/cssreset/cssreset-min.css">
 	<style type="text/css">
-		#navigation {
+#navigation {
 		position: fixed;
 		top: -66px;
 		width: 100%;
@@ -25,28 +25,41 @@
 		-moz-transition: top .25s linear .5s;
 		-o-transition: top .25s linear .5s;
 		transition: top .25s linear .5s;
-		}
-	#navigation p {
+}
+
+#navigation p {
 		padding: 1em;
 		text-align: center;
 		color: #fff;
-	}
-	.content {
+}
+
+#percentageCounter {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+
+h1 {
+	font-size: +2em;
+}
+
+.content {
 		width: 30%;
 		margin: 0 auto;
 		padding: 10px;
 		border: 1px solid #000;
 		background-color: #f5f5f5;
-	}
+}
 	
-	p {
-		margin-bottom: 1em;
-	}
+p {
+	margin-bottom: 1em;
+}
   </style>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="scroll-detection.js"></script>
  <body>
   <div id="navigation"><p>Hidden navigation for users that have trenched deep into your page!</p></div>
+	<div id="percentageCounter"><h1>0%</h1></div>
 	<div class="content">
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae magna ut nulla lobortis iaculis. Maecenas eleifend nibh vehicula dolor interdum auctor. Nullam ut mi a dolor luctus pulvinar in quis nunc. Mauris molestie eget odio eget porttitor. Etiam suscipit ante sapien, non iaculis lacus vulputate non. Nulla vulputate lectus vel leo pulvinar, lobortis rutrum felis porta. Cras egestas, odio ac venenatis tincidunt, dui erat congue ligula, at congue nulla urna ac tortor. Ut in dolor varius, malesuada erat in, semper nisl. Cras euismod arcu sem, ac consectetur sapien rutrum quis. Vestibulum sed feugiat nulla. Duis lacinia ac mauris dictum pellentesque. Vestibulum ut dictum sem. Sed volutpat ornare nisi, vitae faucibus diam auctor id. Nam et euismod lectus.</p>
 	<p>In porttitor, velit id varius volutpat, purus purus ornare urna, in cursus mauris nibh vitae nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec nibh neque, scelerisque a congue a, dictum eget mi. Donec iaculis mauris in porta eleifend. Nam eu nisi velit. Etiam a semper massa. Praesent consequat sapien facilisis tellus auctor, sit amet tincidunt augue faucibus. Aliquam adipiscing elit a congue malesuada. Sed justo urna, vehicula a velit sed, sollicitudin cursus nunc. In auctor sapien nunc, non aliquam nisi euismod a. Maecenas ut est fringilla massa laoreet ullamcorper at eu mauris. Praesent quis porttitor justo.</p>
