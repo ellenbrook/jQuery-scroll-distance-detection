@@ -1,3 +1,13 @@
+//##############################################################
+// Written by Eric Eric Ellenbrook
+// 
+// http://github.com/ellenbrook/jQuery-scroll-distance-detection
+// http://ericellenbrook.com
+//
+// Feel free to make this better. Fork it on Github.
+//
+//##############################################################
+
 $(document).ready(function(){
 	$(window).scroll(function(){
 		
