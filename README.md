@@ -1,3 +1,5 @@
+See it live at: [http://ericellenbrook.com/projects/jQuery-scroll-distance-detection/scroll-detected-nav.html](http://ericellenbrook.com/projects/jQuery-scroll-distance-detection/scroll-detected-nav.html)
+
 jQuery-scroll-distance-detection
 ================================
 
