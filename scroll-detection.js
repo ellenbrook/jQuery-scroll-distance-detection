@@ -28,7 +28,7 @@ $(document).ready(function(){
 		$('#percentageCounter h1').text(scrollPercent+"%");
 
 		if(scrollPercent > targetPercentage) {
-			$("#navigation").css({ top: '0' });
+			$(targetID).css({ top: '0' });
 		}
 		
 		if(scrollPercent < targetPercentage) {
