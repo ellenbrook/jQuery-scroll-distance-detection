@@ -15,6 +15,9 @@ $(document).ready(function(){
 		var targetPercentage = 70;
 		//Change this to set the height of your nav bar so it hides properly. IF you have a box shadow you may have to adjust this number to be height + shadow distance
 		var navBarHeight = 66;
+		//Change this to the ID of the content you are trying to show.
+		var targetID = "#navigation";
+		
 		//Window Math
 		var scrollTo = $(window).scrollTop(),
 		docHeight = $(document).height(),
@@ -29,7 +32,7 @@ $(document).ready(function(){
 		}
 		
 		if(scrollPercent < targetPercentage) {
-			$("#navigation").css({ top: '-'+navBarHeight+'px' });
+			$(targetID).css({ top: '-'+navBarHeight+'px' });
 		}
 								
 	}).trigger('scroll');
