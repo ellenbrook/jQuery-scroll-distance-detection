@@ -1,4 +1,4 @@
-See it live at: [http://ericellenbrook.com/projects/jQuery-scroll-distance-detection/scroll-detected-nav.html](http://ericellenbrook.com/projects/jQuery-scroll-distance-detection/scroll-detected-nav.html)
+See it live at: [http://codepen.io/ellenbrook/pen/IHDor](http://codepen.io/ellenbrook/pen/IHDor)
 
 jQuery-scroll-distance-detection
 ================================
@@ -13,7 +13,7 @@ targetPercentage is the percentage of page you'd like the user to scroll to befo
 
 navBarHeight
 -------------
-navBarHeight is he height of your navbar plus any boarders, shadows, or any other information that is visible from the outside. For example, a navbar of 50px with a shadow that is 3px lower would be a total of 53px. Simple. :-)
+navBarHeight is the height of your navbar plus any boarders, shadows, or any other information that is visible from the outside. For example, a navbar of 50px with a shadow that is 3px lower would be a total of 53px. Simple. :-)
 
 targetID
 --------
