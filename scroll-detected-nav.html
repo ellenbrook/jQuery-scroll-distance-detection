@@ -57,6 +57,21 @@ p {
   </style>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="scroll-detection.js"></script>
+	
+	<script>
+		// Implementing the plugin
+		$(document).ready(function(){
+			$('#navigation').detectScrollDistance(70, function(scrollPercent){
+				$(this).css({ top: '0' });
+			}, function(){
+				var navBarHeight = $(this).height();
+				$(this).css({ 'top': '-'+navBarHeight+'px' });
+			}, function(scrollPercent){
+				$('#percentageCounter h1').text(scrollPercent+"%");
+			});
+			
+		});
+	</script>
  <body>
   <div id="navigation"><p>Hidden navigation for users that have trenched deep into your page!</p></div>
 	<div id="percentageCounter"><h1>0%</h1></div>
