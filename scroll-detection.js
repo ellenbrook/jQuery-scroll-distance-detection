@@ -31,6 +31,8 @@ $.fn.detectScrollDistance = function(targetPercentage, callback){
 		
 	});
 	
+	return self;
+	
 };
 
 $(document).ready(function(){
