@@ -21,6 +21,11 @@ $.fn.detectScrollDistance = function(targetPercentage, callback){
 		
 		var navBarHeight = $(this).height();
 		
+		if(typeof callback == 'function')
+		{
+			callback(scrollPercent);
+		}
+		
 		if(scrollPercent > targetPercentage) {
 			self.css({ top: '0' });
 		}
@@ -37,6 +42,8 @@ $.fn.detectScrollDistance = function(targetPercentage, callback){
 
 $(document).ready(function(){
 	
-	$('#navigation').detectScrollDistance(70);
+	$('#navigation').detectScrollDistance(70, function(scrollPercent){
+		$('#percentageCounter h1').text(scrollPercent+"%");
+	});
 	
 });
