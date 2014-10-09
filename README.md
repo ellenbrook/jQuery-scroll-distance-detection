@@ -1,23 +1,73 @@
-See it live at: [http://codepen.io/ellenbrook/pen/IHDor](http://codepen.io/ellenbrook/pen/IHDor)
+Version
+=======
+2.0
 
-jQuery-scroll-distance-detection
-================================
+jQuery Scroll Detection
+-----------
 
-This is a simple script that detects the percentage of the page that scrolls and does *something*. In this case it drops a hidden navigation bar.
+jQuery Scroll Detection is a simple plugin that allows you to do *something* when your user scrolls to a specific depth into your webpage. Some useful ideas might include:
 
-All you have to do to make it work for your project is to include scroll-detection.js. Once it is included, you will need to change the following variables in order for it to work. They are:
+  - Showing a navigation menu to stop users from scrolling back to the top to navigate away from the page.
+  - Sliding in social media buttons when a user reaches the end of an article.
+  - Fading in a "back to top" icon when users reach the bottom of your page.
+  - Just about anything else you might think of.
 
-targetPercentage
-----------------
-targetPercentage is the percentage of page you'd like the user to scroll to before activing the hidden element.
-
-navBarHeight
--------------
-navBarHeight is the height of your navbar plus any boarders, shadows, or any other information that is visible from the outside. For example, a navbar of 50px with a shadow that is 3px lower would be a total of 53px. Simple. :-)
-
-targetID
---------
-targetID is the ID of the element that you are choosing to show.
+As  you can see there are plenty of uses for this so it's up to you to be creative on as to how you can use it. The possibilities are endless.
 
 
-Have a way to make this better? Let me know.
+How to use
+-----------
+
+It's incredibly easy to use. Simply downloaded [jQuery Scroll Detection](URL HERE) and include it after you include jQuery.
+
+```sh
+	<script src="path/to/jquery.js"></script>
+	<script src="path/to/jquery-scroll-detection.js"></script>
+</body>
+```
+
+Once you've got that complete, the rest is easy. Simply include the script and add the settings you'd like and it just works. 
+
+The example below has testMode turned on, activates when the page is scrolled 40%, acts on a target with an id of #leftPosition with a width of 500px and it will slide in front the left.
+
+
+```sh
+	<script src="path/to/jquery.js"></script>
+	<script src="path/to/jquery-scroll-detection.js"></script>
+	<script>
+	$(document).ready( function() {
+    	$(window).detectScroll({
+    		testMode: true,
+    		targetPercent: 40,
+    		position: "left",
+    		target: "#leftPosition"
+    		width: 500,
+    	});
+	});
+	</script>
+</body>
+```
+###Default settings
+jQuery Scroll Detection can take a number of settings when initialized. Below is a list of the settings and their options or what they contro.
+* **position** - The position in which the action will be taking place. Fade means it will fade in or out. Accepts "*top", "right", "bottom", "left", "fade"*. 
+* **target** - The *ID* of the container you wish to modify upon page scroll.
+* **testMode** - Turning on will display the percentage scrolled. Turning off will hide it. Accepts: *true* or *false*. 
+* **targetPercentage** - This is the percentage in which the plugin will activate. Accepts: integer *1* to *100*.
+* **objectHeight** - This is the height of the object being modified. It is only necessary to define this setting if your **position** is set to *top* or *bottom*. Accepts: any integer. **do not** add "px" to the end.
+* **objectWidth** - This is the width of the object being modified. It is only necessary to define this setting if your **position** is set to *left* or *right*. Accepts any integer. **do not** add "px" to the end.
+* **speed** - This is the speed at which you'd like the action to take place in milliseconds. By default it is set to 400ms. The higher the number, the slower the change. 
+
+Questions
+--------------
+1. **I do not understand how to use it.** - Maybe this page will better explain it by showing you some examples.
+
+2. **What is testMode?** - It's just a way to visualize what percentage the page is scrolled. if you set testMode to true it will display a small counter on the bottom right corner of the screen allowing you to visualize exactly what the percentage scrolled is.
+
+Make this better!
+--------------
+I have no idea what I'm doing. Want to make this better? Submit a pull request and I'll be happy to check it out. 
+
+Or if you have more questions, give me a shout on Twitter ([@_ellenbrook](https://twitter.com/_ellenbrook)) and I'll help you out in any way I can.
+License
+----
+MIT
