@@ -18,7 +18,7 @@ As  you can see there are plenty of uses for this so it's up to you to be creati
 How to use
 -----------
 
-It's incredibly easy to use. Simply downloaded [jQuery Scroll Detection](URL HERE) and include it after you include jQuery.
+It's incredibly easy to use. Simply downloaded [jQuery Scroll Detection](https://github.com/ellenbrook/jQuery-scroll-distance-detection/archive/master.zip) and include it after you include jQuery.
 
 ```sh
 	<script src="path/to/jquery.js"></script>
@@ -59,7 +59,7 @@ jQuery Scroll Detection can take a number of settings when initialized. Below is
 
 Questions
 --------------
-1. **I do not understand how to use it.** - Maybe this page will better explain it by showing you some examples.
+1. **I do not understand how to use it.** - [Here is a page with it in action.](http://ellenbrook.github.io/jquery-scroll-distance-detection/) Does that help clear things up a bit? (Hint: take a look at the source code.)
 
 2. **What is testMode?** - It's just a way to visualize what percentage the page is scrolled. if you set testMode to true it will display a small counter on the bottom right corner of the screen allowing you to visualize exactly what the percentage scrolled is.
 
