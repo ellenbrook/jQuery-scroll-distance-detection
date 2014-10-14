@@ -103,18 +103,6 @@
 
 	    	}); // on scrolll
 
-		    // Did they position it from the bottom?
-		    if( settings.position == "bottom")
-		    {
-		    	//do something from the bottom
-		    }
-
-		    // Did they position it from the left?
-		    if( settings.position == "left")
-		    {
-		    	//do something from the top
-		    }
-
 		    // Is testMode on? Better show a percentage counter
 		    if ( settings.testMode ) 
 		    {
